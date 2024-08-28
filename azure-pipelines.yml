@@ -26,5 +26,5 @@ steps:
     cb_user: '$(cb_user)'
     cb_password: '$(cb_password)'
     test_configuration_id: '26458'
-    test_runs_tracker_id: '172584'
+    test_run_tracker_id: '172584'
     test_case_tracker_id: '178084'
