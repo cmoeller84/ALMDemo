@@ -17,3 +17,14 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: codeBeamer@1
+  inputs:
+    test_xml_folder: 'Test'
+    test_run_name: '$(Build.DefinitionName) $(Build.Reason)'
+    test_run_id: '$(Build.BuildId)'
+    server_url: 'http://itsrvw0050:8080/'
+    cb_user: '$(cb_user)'
+    cb_password: '$(cb_password)'
+    test_configuration_id: '26458'
+    test_runs_tracker_id: '172584'
+    test_case_tracker_id: '178084'
